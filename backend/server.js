@@ -33,11 +33,8 @@ if (!fs.existsSync(buildsDir)) {
 app.use(
   cors({
     origin: [
-      "http://localhost:3000",
-      "http://localhost:5000",
-      "http://localhost",
-      "https://hab-creative-portfolio.vercel.app",
-      "*",
+      "https://trongbui-swe.vercel.app",
+      "https://trongbui-com.onrender.com",
     ],
     credentials: true,
   }),
