@@ -4,7 +4,6 @@ import "./globals.css";
 import { Toaster } from "react-hot-toast";
 import { Providers } from "./providers";
 import Footer from "./components/Footer";
-import AnimatedBackground from "./components/AnimatedBackground";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,7 +22,6 @@ export default function RootLayout({
       <body
         className={`${inter.className} min-h-screen flex flex-col relative`}
       >
-        <AnimatedBackground />
         <Providers>
           <main className="flex-1 relative z-10">{children}</main>
           <Footer />
