@@ -12,6 +12,10 @@ const fs = require("fs");
 dotenv.config();
 
 const app = express();
+
+// CHÍNH XÁC LÀ Ở ĐÂY: Thêm dòng này để nhận diện đúng IP client trên Render
+app.set("trust proxy", 1);
+
 const downloadsDir = path.join(__dirname, "downloads");
 if (!fs.existsSync(downloadsDir)) {
   fs.mkdirSync(downloadsDir, { recursive: true });
