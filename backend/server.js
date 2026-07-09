@@ -12,7 +12,6 @@ const fs = require("fs");
 dotenv.config();
 
 const app = express();
-app.set("trust proxy", 1);
 const downloadsDir = path.join(__dirname, "downloads");
 if (!fs.existsSync(downloadsDir)) {
   fs.mkdirSync(downloadsDir, { recursive: true });
